@@ -1,0 +1,118 @@
+*{
+    font-family: "Wix Madefor Text", sans-serif;
+    
+}
+
+body{
+  
+    height: 100vh;
+    background: linear-gradient(126deg, #2F40AD 27.90508270263672%, #394FB7 39.71376419067383%, #2A3BA9 50.911521911621094%, #394FB7 63.58194351196289%, #354AB5 91.60547256469727%);
+    margin: 0; 
+    padding: 0; 
+  
+}
+.header{
+   
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+}
+
+.titulo-header {
+    margin-top: 1em;
+    padding: 0.7em;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(165, 165, 165);
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    margin-top: auto;
+
+}
+
+.contenedor-principal{
+    
+    
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ margin: 100px;
+ align-content: space-between;
+ justify-content: center;
+ 
+}
+
+.titulo-contenedor{
+    display: flex;
+    font-size: 96px;
+    line-height: 106px;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    color:  rgb(255, 255, 255);
+    word-spacing: 0px;
+    margin-bottom: 5px;
+}
+
+.parrafo-contenedor1{
+    font-size: 20px;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 30px;
+    word-spacing: 0px;
+    text-align: center;
+    color: #fff;
+    height: auto;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: 30px;
+    display: flex;
+    
+    
+   
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.boton-crear{
+   
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    font-size: 24px;
+    border: none;
+    padding: 15px;
+    width: 200px ;
+    margin-bottom: 30px;
+    padding-left: 30px;
+   
+    
+}
+
+.material-symbols-outlined{
+    font-size: 30px;
+}
+
+.parrafo-contenedor2{
+    font-size: 16px;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 30px;
+    word-spacing: 0px;
+    text-align: center;
+    color: #fff;
+    height: auto;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: 30px;
+    display: flex;
+}

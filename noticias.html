@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="css/estilos_noticias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="contenedor-header">
+        <div class="contenedor-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </div>
+
+        <div class="contenedor-nombre">
+            <h1>AgroNews</h1>
+        </div>
+
+        <div class="contenedor-boton">
+            <a href="#" target="_self">Agregar noticia</a>
+        </div>
+    </header>
+    <main class="contenedor-principal">
+        <div class="contenedor-titulo-pagina">
+            <h2>Noticias</h2>
+        </div>
+
+        <!-- MODAL eliminar noticia-->
+        <section class="modal-eliminar" id="modal-eliminar">
+            <div class="contenedor-modal">
+                <h2 class="titulo-modal">¿Esta seguro de eliminar la noticia?</h2>
+            
+    
+                <div class="contenedor-botones">
+                    <a href="" class="btn-aceptar-eliminar">Aceptar</a>
+                    <a href="" class="btn-cancelar-eliminar">Cancelar</a>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <!-- modal formulario -->
+        <section class="modal-formulario">
+            <form class="contenedor-modal-formulario" id="formulario">  
+                <h2>¡Cuentanos tu historia!</h2>
+
+                <label for="titulo">Título de la noticia</label>
+                <input class="entrada" type="text" name="titulo" id="titulo" maxlength="70"placeholder="Ingrese el título de la noticia">
+
+                <label for="sumario">Sumario</label>
+                <textarea name="contenido" class="contenido" id="sumario" cols="30" rows="2" maxlength="140" placeholder="Ingresa el Sumario de la noticia" ></textarea>
+
+                <label for="contenido">Descripción</label>
+                <textarea name="contenido" class="contenido" id="contenido" cols="30" rows="7"  maxlength="1500" placeholder="Ingresa la descripción de la noticia" ></textarea>
+                <div class="contenedor-archivos-formulario">
+                    <div>
+                        <label for="imagen">Subir imagen</label>
+                        <input class="archivo" type="file" name="imagen" id="subir-imagen">
+                    </div>
+                  
+                    <div >
+                        <label for="archivo">Subir archivo</label>
+                        <input class="archivo"  type="file" name="archivo" id="subir-archivo">
+                    </div>
+                   
+                </div>
+
+                <div class="contenedor-botones-formulario">
+                    <button id="btn-crear-noticia" class="boton-formulario"  type="submit" onclick="return resetear();">Subir noticia</button>
+                    <button id="btn-cancelar-noticia" class="boton-formulario"  type="submit">Cerrar formulario</button>
+                </div>
+                
+                  
+                
+            </form>
+        </section>
+
+
+        <!-- Modal Editar noticia -->
+
+        <section class="modal-editar modal-formulario">
+        
+        </section>
+       
+        <!-- carrousel -->
+
+        <div class="carousel__container">
+
+            <div class="carrousel-list" id="carrousel-list">
+
+                <button class="carrousel-arrow carrousel-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">
+
+
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                    class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+
+                    <path fill="currentColor"
+                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                    </path>
+                </svg>
+                </button>
+            
+    
+                <!-- carrousel (es es la parte que se mueve) -->
+                <div class="carrousel-track" id="track">
+    
+
+                </div>
+    
+                <button class="carrousel-arrow carrousel-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                     d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                </svg>
+                </button>
+    
+            </div>
+    
+        </div>
+
+        <!-- Articulos noticias -->
+        <div id="articulos-noticias">
+            <div >
+                
+            </div>
+
+
+
+
+            
+            
+        </div>
+        <script src="js/modal.js"></script>
+        <script src="js/carrousel.js"></script>
+        <script src="js/app.js"></script>
+
+
+    </main>
+
+
+    
+</body>
+</html>
